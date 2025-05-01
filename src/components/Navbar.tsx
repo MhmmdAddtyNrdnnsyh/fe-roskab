@@ -76,6 +76,14 @@ const Navbar: React.FC = () => {
               Struktur Organisasi
             </Link>
             <Link 
+              to="/event" 
+              className={`font-medium transition-colors ${isActive('/event') 
+                ? (isScrolled ? 'text-green-600' : 'text-white font-semibold') 
+                : (isScrolled ? 'text-gray-700 hover:text-green-600' : 'text-white/80 hover:text-white')}`}
+            >
+              Event
+            </Link>
+            <Link 
               to="/kontak" 
               className={`px-4 py-2 rounded-full font-medium transition-colors ${
                 isScrolled 
@@ -139,6 +147,13 @@ const Navbar: React.FC = () => {
                 onClick={() => setIsMenuOpen(false)}
               >
                 Struktur Organisasi
+              </Link>
+              <Link 
+                to="/event" 
+                className={`px-4 py-3 font-medium ${isActive('/event') ? 'text-green-600 bg-green-50' : 'text-gray-700 hover:bg-gray-50'}`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Event
               </Link>
               <Link 
                 to="/kontak" 
