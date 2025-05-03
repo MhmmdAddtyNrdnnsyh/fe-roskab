@@ -36,8 +36,9 @@ const Navbar: React.FC = () => {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
+          <img src="/logo.png" alt="" width={40}/>
             <div className={`text-2xl font-bold font-nunito ${isScrolled ? 'text-green-600' : 'text-white'}`}>
-              ROHIS
+              Rohis Kab. Tegal
             </div>
           </Link>
 
@@ -57,7 +58,7 @@ const Navbar: React.FC = () => {
                 ? (isScrolled ? 'text-green-600' : 'text-white font-semibold') 
                 : (isScrolled ? 'text-gray-700 hover:text-green-600' : 'text-white/80 hover:text-white')}`}
             >
-              Tentang Kami
+              Tentang
             </Link>
             <Link 
               to="/galeri" 
@@ -73,7 +74,7 @@ const Navbar: React.FC = () => {
                 ? (isScrolled ? 'text-green-600' : 'text-white font-semibold') 
                 : (isScrolled ? 'text-gray-700 hover:text-green-600' : 'text-white/80 hover:text-white')}`}
             >
-              Struktur Organisasi
+              Struktur
             </Link>
             <Link 
               to="/event" 
@@ -132,7 +133,7 @@ const Navbar: React.FC = () => {
                 className={`px-4 py-3 font-medium ${isActive('/tentang') ? 'text-green-600 bg-green-50' : 'text-gray-700 hover:bg-gray-50'}`}
                 onClick={() => setIsMenuOpen(false)}
               >
-                Tentang Kami
+                Tentang
               </Link>
               <Link 
                 to="/galeri" 
@@ -146,7 +147,7 @@ const Navbar: React.FC = () => {
                 className={`px-4 py-3 font-medium ${isActive('/struktur') ? 'text-green-600 bg-green-50' : 'text-gray-700 hover:bg-gray-50'}`}
                 onClick={() => setIsMenuOpen(false)}
               >
-                Struktur Organisasi
+                Struktur
               </Link>
               <Link 
                 to="/event" 

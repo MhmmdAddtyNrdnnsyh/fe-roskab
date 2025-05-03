@@ -10,7 +10,7 @@ const About: React.FC = () => {
             {/* Placeholder image with gradient background */}
             <div className="bg-gradient-to-br from-green-100 to-green-200 rounded-2xl overflow-hidden aspect-[4/3] shadow-xl relative">
               <img 
-                src="/contoh-bg.jpg" 
+                src="/fotbar.jpg" 
                 alt="Komunitas kami" 
                 className="w-full h-full object-cover"
               />
@@ -30,7 +30,7 @@ const About: React.FC = () => {
             </div>
             
             <p className="text-lg md:text-xl text-gray-600 leading-relaxed mb-8">
-              Kami adalah komunitas anak muda yang aktif dalam kegiatan keagamaan, sosial, dan pengembangan diri.
+              Kami adalah organisasi anak muda yang aktif dalam kegiatan keagamaan, sosial, dan pengembangan diri.
               Bersama-sama, kami tumbuh dalam iman dan berkontribusi positif untuk lingkungan sekitar.
             </p>
             

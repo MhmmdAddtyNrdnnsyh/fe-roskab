@@ -3,30 +3,23 @@ import React from 'react';
 const agendaItems = [
   {
     id: 1,
-    title: 'Ngaji Bareng',
-    date: 'Setiap Jumat',
-    description: 'Kajian rutin bersama ustadz untuk memperdalam ilmu agama',
+    title: 'Titik Kumpul Rohis',
+    date: 'Setiap Kamis',
+    description: 'Pelantikan rohis kabupaten angkatan 2025/2026',
     icon: '🕌'
   },
   {
     id: 2,
-    title: 'Movie Night Religi',
-    date: 'Sabtu, 20 April 2024',
-    description: 'Nonton bareng film-film inspiratif islami',
+    title: 'Latihan Gabungan',
+    date: 'Setiap Jumat',
+    description: 'Mengisi ekstrakurikuler rohis sma/smk kabupaten tegal',
     icon: '🎬'
   },
   {
     id: 3,
-    title: 'Jumat Berbagi',
-    date: 'Setiap Jumat',
-    description: 'Berbagi keberkahan dengan sesama melalui sedekah',
-    icon: '🤲'
-  },
-  {
-    id: 4,
-    title: 'Tahsin Al-Quran',
+    title: 'Rapat Rutinan',
     date: 'Setiap Ahad',
-    description: 'Belajar membaca Al-Quran dengan tajwid yang benar',
+    description: 'Rapat rutinan setiap yang dilaksanakan setiap ahad',
     icon: '📖'
   }
 ];
@@ -78,11 +71,6 @@ const Agenda: React.FC = () => {
             ))}
           </div>
           
-          <div className="text-center mt-8">
-            <button className="bg-white text-green-600 border-2 border-green-500 font-semibold py-3 px-8 rounded-full text-lg hover:bg-green-50 transition-colors shadow-md">
-              Lihat Semua Kegiatan
-            </button>
-          </div>
         </div>
       </div>
     </section>

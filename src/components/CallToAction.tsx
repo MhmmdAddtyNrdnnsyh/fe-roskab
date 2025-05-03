@@ -15,7 +15,7 @@ const CallToAction: React.FC = () => {
               Mau Gabung Bersama Kami?
             </h2>
             <p className="text-xl mb-8 opacity-90">
-              Yuk, jadi bagian dari komunitas yang menginspirasi! Klik tombol di samping untuk bergabung dengan kami melalui WhatsApp.
+              Yuk, jadi bagian dari organisasi yang menginspirasi! Klik tombol di samping untuk bergabung dengan kami melalui WhatsApp.
             </p>
             
             <div className="flex space-x-4 mb-6">
@@ -60,7 +60,7 @@ const CallToAction: React.FC = () => {
                   </svg>
                 </button>
                 
-                <p className="mt-4 text-sm text-gray-500">Atau email kami di: info@rohis-example.com</p>
+                <p className="mt-4 text-sm text-gray-500">Atau email kami di: Forumrohis.kabtegal@gmail.com</p>
               </div>
             </div>
           </div>

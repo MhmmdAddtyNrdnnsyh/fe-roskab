@@ -7,7 +7,7 @@ const AboutPage: React.FC = () => {
         <div className="container mx-auto px-4 py-16 text-center text-white">
           <h1 className="text-4xl md:text-5xl font-bold mb-4 font-nunito">Tentang Kami</h1>
           <p className="text-xl opacity-90 max-w-3xl mx-auto">
-            Mengenal lebih dekat komunitas ROHIS dan kisah perjalanan kami
+            Mengenal lebih dekat Organisasi Rohis dan kisah perjalanan kami
           </p>
         </div>
       </div>

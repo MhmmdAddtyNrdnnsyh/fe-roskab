@@ -3,17 +3,17 @@ import React from 'react';
 const galleryItems = [
   {
     id: 1,
-    image: '/contoh-bg.jpg', // Placeholder image path
+    image: '/fotbar.jpg', // Placeholder image path
     title: 'Kajian Rutin'
   },
   {
     id: 2,
-    image: '/contoh-bg.jpg', // Placeholder image path
+    image: '/fotbar.jpg', // Placeholder image path
     title: 'Aksi Sosial'
   },
   {
     id: 3,
-    image: '/contoh-bg.jpg', // Placeholder image path
+    image: '/fotbar.jpg', // Placeholder image path
     title: 'Belajar Al-Quran'
   }
 ];
@@ -30,7 +30,7 @@ const Gallery: React.FC = () => {
             Galeri Kegiatan
           </h2>
           <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
-            Momen-momen berharga dari kegiatan kami dalam menjalankan program-program keagamaan dan sosial
+            Dokumentasi dari kegiatan kami dalam menjalankan program-program keagamaan dan sosial
           </p>
         </div>
         

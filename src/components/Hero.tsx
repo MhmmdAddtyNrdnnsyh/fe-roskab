@@ -34,14 +34,14 @@ const Hero: React.FC = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="flex flex-col items-center justify-center min-h-screen text-center text-white">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 font-nunito">
-            Bersama dalam Iman, Tumbuh dalam Kasih
+            Selamat Datang.
           </h1>
           <p className="text-xl md:text-2xl mb-8 max-w-2xl opacity-90">
-            Bergabunglah dengan komunitas yang menginspirasi dan menumbuhkan nilai-nilai keagamaan
+          Selamat datang di situs web resmi ROHIS SMA/SMK se-Kabupaten Tegal, tempat di mana kita dapat bersama-sama memperdalam iman, dan memperkuat ukhuwah Islamiyah di Kabupaten Tegal.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <button className="bg-white text-green-600 font-semibold py-3 px-8 rounded-full text-lg hover:bg-opacity-90 transition-all transform hover:scale-105 shadow-lg">
-              Jelajahi Komunitas Kami
+              Jelajahi Organisasi Kami
             </button>
             <button 
               onClick={handlePlayVideo}

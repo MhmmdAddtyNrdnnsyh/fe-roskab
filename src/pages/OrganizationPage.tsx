@@ -3,69 +3,75 @@ import React from 'react';
 // Dummy organization structure data - replace with actual data later
 const organizationData = {
   ketua: {
-    name: 'Ahmad Rizki',
+    name: 'Muhammad Haidar Islamy Rasyad',
     position: 'Ketua Umum',
-    image: '/contoh-bg.jpg',
+    image: '/fotbar.jpg',
     description: 'Mahasiswa Jurusan Teknik Informatika, aktif dalam berbagai kegiatan kepemimpinan dan dakwah kampus.'
   },
   wakil: {
-    name: 'Farah Aliyah',
+    name: 'Halimatun Nisa',
     position: 'Wakil Ketua',
-    image: '/contoh-bg.jpg',
+    image: '/fotbar.jpg',
     description: 'Mahasiswa Jurusan Ekonomi Islam, fokus pada pengembangan program-program sosial.'
   },
   sekretaris: [
     {
-      name: 'Muhammad Faisal',
-      position: 'Sekretaris',
-      image: '/contoh-bg.jpg',
+      name: 'Jihan Nabila Suryo',
+      position: 'Sekretaris 1',
+      image: '/fotbar.jpg',
       description: 'Mahasiswa Jurusan Ilmu Komunikasi, bertanggung jawab untuk administrasi dan dokumentasi kegiatan.'
     },
     {
-      name: 'Aisyah Putri',
-      position: 'Wakil Sekretaris',
-      image: '/contoh-bg.jpg',
+      name: 'Setiawati Sasmita',
+      position: 'Sekretaris 2',
+      image: '/fotbar.jpg',
       description: 'Mahasiswa Jurusan Sastra Arab, membantu pengelolaan dokumen dan surat-menyurat.'
     }
   ],
   bendahara: [
     {
-      name: 'Nur Hidayah',
-      position: 'Bendahara',
-      image: '/contoh-bg.jpg',
+      name: 'Kirannia Ayu Zulaika',
+      position: 'Bendahara 1',
+      image: '/fotbar.jpg',
       description: 'Mahasiswa Jurusan Akuntansi, mengelola keuangan dan pembukuan organisasi.'
     },
     {
-      name: 'Zaki Ahmad',
-      position: 'Wakil Bendahara',
-      image: '/contoh-bg.jpg',
+      name: 'M. Ridho Balya Mahbubi',
+      position: 'Bendahara 2',
+      image: '/fotbar.jpg',
       description: 'Mahasiswa Jurusan Manajemen, membantu pengelolaan dana dan pencatatan keuangan.'
     }
   ],
   divisi: [
     {
-      name: 'Divisi Kajian',
-      head: 'Rahmat Ibrahim',
-      members: ['Aisha Zahra', 'Hasan Ali', 'Siti Aminah'],
+      name: 'Sie Kajian',
+      head: 'Detak Bara Alam',
+      members: ['Nur Fauziatun Ni`mah', 'Fakhri Ilyas Ramawan', 'Siti Maisah Putri', 'Alifianita Rohima'],
       description: 'Bertanggung jawab untuk menyelenggarakan kajian rutin, diskusi keislaman, dan tahsin Al-Quran.'
     },
     {
-      name: 'Divisi Media & Komunikasi',
-      head: 'Lutfi Hakim',
-      members: ['Nadia Putri', 'Irfan Setiawan', 'Laila Nabila'],
+      name: 'Sie Sosial',
+      head: 'Nita Mugnis Aulia',
+      members: ['Maulidida Amalia Putri', 'M. Dwi Andrean Maheto', 'Dhyki Zaka Ramadhani', 'M. Arief Fatkhurrohman', 'Dyita Arniati'],
       description: 'Mengelola media sosial, dokumentasi kegiatan, dan publikasi acara-acara ROHIS.'
     },
     {
-      name: 'Divisi Sosial & Charity',
-      head: 'Salma Husna',
-      members: ['Rifqi Hakim', 'Maya Indah', 'Dimas Pratama'],
+      name: 'Sie Kewirausahaan',
+      head: 'Ratna Junita Caesary',
+      members: ['Igness Iftitah Rizqy', 'Khoirunnisa', 'Rendi Agustian', 'Nabkhun Azmy', 'Arip Maulana'],
       description: 'Mengkoordinir program-program sosial, bakti sosial, dan penggalangan dana.'
     },
     {
-      name: 'Divisi Seni & Kreatif',
-      head: 'Indra Kusuma',
-      members: ['Nadira Zahra', 'Farhan Ahmad', 'Amelia Putri'],
+      name: 'Sie Pelatihan',
+      head: 'Riska Amalia',
+      members: ['Laili Rahmawati', 'Hikmatul Jannah', 'M. Husnul Aqib', 'Dea Avita', 'Maulana Alfarizi'],
       description: 'Mengembangkan kegiatan seni islami seperti kaligrafi, nasyid, dan film-film religi.'
+    },
+    {
+      name: 'Sie Humas Dan Jurnalistik',
+      head: 'Adhitia Dwi Cahyani',
+      members: ['Muhammad Aditya Nurdiansyah', 'Sabrina Marsya Azana', 'Novandri Firmansyah', 'Alya Riva', 'M. Firdaus'],
+      description: 'Mengumpulkan Dokumentasi dokumentasi setiap kali ada agenda'
     }
   ]
 };
@@ -77,7 +83,7 @@ const OrganizationPage: React.FC = () => {
         <div className="container mx-auto px-4 py-16 text-center text-white">
           <h1 className="text-4xl md:text-5xl font-bold mb-4 font-nunito">Struktur Organisasi</h1>
           <p className="text-xl opacity-90 max-w-3xl mx-auto">
-            Mengenal lebih dekat para pengurus ROHIS periode 2023-2024
+            Mengenal lebih dekat para pengurus ROHIS periode 2025-2025
           </p>
         </div>
       </div>
