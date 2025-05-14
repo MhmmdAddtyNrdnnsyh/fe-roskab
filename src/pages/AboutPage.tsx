@@ -15,16 +15,14 @@ const AboutPage: React.FC = () => {
       <div className="container mx-auto px-4 py-16">
         <div className="max-w-4xl mx-auto">
           <div className="mb-12">
-            <h2 className="text-3xl font-bold mb-6 text-gray-800 font-nunito">Sejarah Kami</h2>
+            <h2 className="text-3xl font-bold mb-6 text-gray-800 font-nunito">Sejarah Rohis Kabupaten Tegal</h2>
             <p className="text-gray-600 mb-4">
-              ROHIS (Rohani Islam) adalah organisasi yang didirikan dengan tujuan untuk memperkuat nilai-nilai keislaman di kalangan pelajar. 
-              Berawal dari sebuah kelompok kecil yang dipelopori oleh beberapa siswa yang memiliki kepedulian terhadap pengembangan spiritual,
-              ROHIS terus berkembang menjadi organisasi yang aktif dalam berbagai kegiatan keagamaan dan sosial.
+              Sekitar tahun 2010, para pelajar Rohis SMA/SMK di Kabupaten Tegal mulai merasakan perlunya sebuah wadah yang lebih luas untuk menyatukan semangat dakwah di antara sekolah-sekolah. Saat itu, Rohis sebenarnya sudah ada di hampir setiap sekolah, namun kegiatan dan koordinasinya masih bersifat internal dan belum terhubung secara lintas sekolah. Belum ada forum yang menaungi seluruh Rohis di tingkat kabupaten.
             </p>
-            <p className="text-gray-600">
-              Sejak didirikan pada tahun 2010, ROHIS telah menjadi wadah bagi siswa-siswi Muslim untuk mengembangkan potensi, 
-              mengasah kepemimpinan, dan membangun karakter berdasarkan nilai-nilai islami.
+            <p className="text-gray-600 mb-4">
+              Melihat kebutuhan tersebut, sejumlah pelajar bersama para guru pembina mengambil inisiatif untuk menghubungkan antar-Rohis sekolah melalui pertemuan dan diskusi bersama. Dua sosok yang berperan penting dalam proses ini adalah Bapak Mokhamad Akhmad, S.Ag. dan Bapak Akhmad Khanan—guru pembina Rohis yang sangat aktif mendampingi pelajar dan menggagas terbentuknya forum dakwah pelajar tingkat kabupaten.
             </p>
+            <p className="text-gray-600">Pertemuan awal dilakukan secara informal, diisi dengan diskusi seputar visi dakwah pelajar, rencana program, dan pentingnya sinergi antarsekolah. Setelah melalui berbagai kegiatan kolaboratif seperti pelatihan dan kajian Islam, akhirnya terbentuklah Forum Rohis Kabupaten Tegal secara resmi. Forum ini menjadi wadah bersama bagi para pelajar Rohis SMA/SMK se-Kabupaten Tegal untuk mempererat ukhuwah Islamiyah, menyatukan semangat dakwah, serta memperluas jangkauan peran pelajar Muslim di masyarakat sekolah.</p>
           </div>
           
           <div className="mb-12">
