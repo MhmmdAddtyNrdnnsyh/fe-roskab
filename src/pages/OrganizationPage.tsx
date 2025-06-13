@@ -2,30 +2,60 @@ import React from 'react';
 
 // Dummy organization structure data - replace with actual data later
 const organizationData = {
+  pembina1: {
+    name: 'Akhmad Khanan,S.Ag, M.Pd.I',
+    position: 'Pembina Rohis SMA-SMK Kabupaten Tegal',
+    image: '',
+    description: ''
+  },
+  pembina2: {
+    name: 'Mokhamad Akhmad,S.Ag',
+    position: 'Pembina Rohis SMA-SMK Kabupaten Tegal',
+    image: '',
+    description: ''
+  },
+  pembina3: {
+    name: 'Musabaqoh, S.Ag, M.Si',
+    position: 'Pembina Rohis SMA-SMK Kabupaten Tegal',
+    image: '',
+    description: ''
+  },
+  pembina4: {
+    name: 'Kaniah, S.Ag., M.Pd.I',
+    position: 'Pembina Rohis SMA-SMK Kabupaten Tegal',
+    image: '',
+    description: ''
+  },
+  pembina5: {
+    name: 'Moh. Ali Ghozi, S.Ag',
+    position: 'Pembina Rohis SMA-SMK Kabupaten Tegal',
+    image: '',
+    description: ''
+  },
   ketua: {
     name: 'Muhammad Haidar Islamy Rasyad',
     position: 'Ketua Umum',
     image: '/fotbar.jpg',
-    description: 'Mahasiswa Jurusan Teknik Informatika, aktif dalam berbagai kegiatan kepemimpinan dan dakwah kampus.'
+    description: 'Siswa SMK Negeri 1 Adiwerna jurusan Teknik Kendaraan Ringan.'
   },
   wakil: {
     name: 'Halimatun Nisa',
     position: 'Wakil Ketua',
     image: '/fotbar.jpg',
-    description: 'Mahasiswa Jurusan Ekonomi Islam, fokus pada pengembangan program-program sosial.'
+    description: 'Siswa SMK Negeri 1 Dukuhturi jurusan Akuntansi.'
   },
   sekretaris: [
     {
       name: 'Jihan Nabila Suryo',
       position: 'Sekretaris 1',
       image: '/fotbar.jpg',
-      description: 'Mahasiswa Jurusan Ilmu Komunikasi, bertanggung jawab untuk administrasi dan dokumentasi kegiatan.'
+      description: 'Siswa SMK Negeri 1 Adiwerna jurusan Teknik Komputer dan Jaringan.'
     },
     {
       name: 'Setiawati Sasmita',
       position: 'Sekretaris 2',
       image: '/fotbar.jpg',
-      description: 'Mahasiswa Jurusan Sastra Arab, membantu pengelolaan dokumen dan surat-menyurat.'
+      description: 'Siswa SMA Negeri 1 Slawi paket IPA.'
     }
   ],
   bendahara: [
@@ -33,13 +63,13 @@ const organizationData = {
       name: 'Kirannia Ayu Zulaika',
       position: 'Bendahara 1',
       image: '/fotbar.jpg',
-      description: 'Mahasiswa Jurusan Akuntansi, mengelola keuangan dan pembukuan organisasi.'
+      description: 'Siswa SMK Negeri 1 Slawi jurusan Akuntansi.'
     },
     {
       name: 'M. Ridho Balya Mahbubi',
       position: 'Bendahara 2',
       image: '/fotbar.jpg',
-      description: 'Mahasiswa Jurusan Manajemen, membantu pengelolaan dana dan pencatatan keuangan.'
+      description: 'Siswa SMK Negeri 2 Adiwerna jurusan Akuntansi.'
     }
   ],
   divisi: [
@@ -89,6 +119,45 @@ const OrganizationPage: React.FC = () => {
       </div>
 
       <div className="container mx-auto px-4 py-16">
+        {/* Pembina Section */}
+        <div className="max-w-6xl mx-auto mb-24">
+          <h2 className="text-2xl font-bold mb-8 text-center font-nunito text-gray-800">Pembina</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {Object.entries(organizationData)
+              .filter(([key]) => key.startsWith('pembina'))
+              .map(([key, person]) => {
+                if ('name' in person && 'position' in person) {
+                  return (
+                    <div key={key} className="bg-white rounded-xl overflow-hidden shadow-md transform transition-transform hover:-translate-y-1">
+                      <div className="h-2 bg-green-500"></div>
+                      <div className="p-4">
+                        <div className="flex flex-col items-center text-center">
+                          <div className="w-24 h-24 rounded-full overflow-hidden border-4 border-white shadow-md mb-4">
+                            <img 
+                              src={person.image || '/default-avatar.jpg'} 
+                              alt={person.name} 
+                              className="w-full h-full object-cover"
+                            />
+                          </div>
+                          <div className="inline-block px-3 py-1 bg-green-100 text-green-600 rounded-full text-xs font-medium mb-2">
+                            {person.position}
+                          </div>
+                          <h3 className="text-lg font-bold text-gray-800 font-nunito">
+                            {person.name}
+                          </h3>
+                          <p className="text-gray-600 mt-2 text-sm">
+                            {person.description}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  );
+                }
+                return null;
+              })}
+          </div>
+        </div>
+
         {/* Main Leaders */}
         <div className="max-w-6xl mx-auto mb-24">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
