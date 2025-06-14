@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const agendaItems = [
   {
@@ -25,6 +26,8 @@ const agendaItems = [
 ];
 
 const Agenda: React.FC = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
@@ -59,7 +62,10 @@ const Agenda: React.FC = () => {
                     {item.description}
                   </p>
                   <div className="mt-6">
-                    <button className="text-green-600 font-medium inline-flex items-center hover:text-green-700 transition-colors">
+                    <button 
+                      onClick={() => navigate('/kegiatan')}
+                      className="text-green-600 font-medium inline-flex items-center hover:text-green-700 transition-colors"
+                    >
                       <span>Selengkapnya</span>
                       <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>

@@ -77,31 +77,61 @@ const organizationData = {
       name: 'Sie Kajian',
       head: 'Detak Bara Alam',
       members: ['Nur Fauziatun Ni`mah', 'Fakhri Ilyas Ramawan', 'Siti Maisah Putri', 'Alifianita Rohima'],
-      description: 'Bertanggung jawab untuk menyelenggarakan kajian rutin, diskusi keislaman, dan tahsin Al-Quran.'
+      description: [
+        '1. Pengajian Rutinan FRA Rohis Kabupaten Tegal.',
+        '2. Mengadakan Peringatan Hari Besar Islam.',
+        '3. Pengajian Durotunnisa.',
+        '4. Outing Rohis Islamy.'
+      ]
     },
     {
       name: 'Sie Sosial',
       head: 'Nita Mugnis Aulia',
       members: ['Maulidida Amalia Putri', 'M. Dwi Andrean Maheto', 'Dhyki Zaka Ramadhani', 'M. Arief Fatkhurrohman', 'Dyita Arniati'],
-      description: 'Mengelola media sosial, dokumentasi kegiatan, dan publikasi acara-acara ROHIS.'
+      description: [
+        '1. Terti Bersama.',
+        '2. Ikatan Asih.',
+        '3. Sosialisasi Pengenalan Rohis Kabupaten Tegal.',
+        '4. Rohis Beraksi.',
+        '5. Melakasanakan Kegiatan Open Recruitment Dengan Memegang Prinsip Kejujuran, Keadilan, Transparansi, dan Akuntabilitas, dan Profesionalitas.'
+      ]
     },
     {
       name: 'Sie Kewirausahaan',
       head: 'Ratna Junita Caesary',
       members: ['Igness Iftitah Rizqy', 'Khoirunnisa', 'Rendi Agustian', 'Nabkhun Azmy', 'Arip Maulana'],
-      description: 'Mengkoordinir program-program sosial, bakti sosial, dan penggalangan dana.'
+      description: [
+        '1. Membuat Baju Identitas Rohis Kabupaten Tegal Seperti Jaz, Kaos Ataupun Yang Lainnya.',
+        '2. Membuat Agenda Rohis Kabupaten. Sie Kewirausahaan Membuat Merchandise Seperti Kartu Anggota, Gantungan Kunci, Ataupun Souvenir Lainnya.',
+        '3. Mengundang Wirausahwan Handal Yang Akan Membagikan Ilmunya Secara Langsung.',
+        '4. Dari Sie Kewirausahaan Melakukan Kolaborasi Dengan Sie Sosial Untuk Menyelenggarakan Bagi-bagi Takjil di Bulan Ramadhan.',
+        '5. Membuat Dan Mengelola Usaha Dan Unit Produksi Organisasi Sebagai Sumber Dana Ketiga.'
+      ]
     },
     {
       name: 'Sie Pelatihan',
       head: 'Riska Amalia',
       members: ['Laili Rahmawati', 'Hikmatul Jannah', 'M. Husnul Aqib', 'Dea Avita', 'Maulana Alfarizi'],
-      description: 'Mengembangkan kegiatan seni islami seperti kaligrafi, nasyid, dan film-film religi.'
+      description: [
+        '1. Mengadakan Festival rohis dengan mengadakan banyak lomba.',
+        '2. Mengadakan Latihan gabungan Rohis SMA/SMK Kabupaten Tegal.',
+        '3. Mengadakan Webinar dan Seminar.',
+        '4. HUT Rohis SMA/SMK sekabupaten Tegal.',
+        '5. Pengembangan zakat',
+        '6. Mengadakan Latihan gabungan antar Rohis Kabupaten Tegal dengan Rohis Kota Tegal.',
+        '7. Memperingati Tahun Baru Islam dalam bentuk Lomba (LCCI) Rohis SMA/SMK Se-Kabupaten Tegal.'
+      ]
     },
     {
       name: 'Sie Humas Dan Jurnalistik',
       head: 'Adhitia Dwi Cahyani',
       members: ['Muhammad Aditya Nurdiansyah', 'Sabrina Marsya Azana', 'Novandri Firmansyah', 'Alya Riva', 'M. Firdaus'],
-      description: 'Mengumpulkan Dokumentasi dokumentasi setiap kali ada agenda'
+      description: [
+        '1. Menambahkan akun sosmed berupa tiktok.',
+        '2. Membuat konten tentang konten keseharian islami.',
+        '3. Mendokumentasikan serta mempublikasikan jalannya kegiatan acara.',
+        '4. Membuat pamflet PHBI.'
+      ]
     }
   ]
 };
@@ -160,6 +190,7 @@ const OrganizationPage: React.FC = () => {
 
         {/* Main Leaders */}
         <div className="max-w-6xl mx-auto mb-24">
+          <h2 className="text-2xl font-bold mb-8 text-center font-nunito text-gray-800">Ketua & Wakil</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {/* Ketua */}
             <div className="bg-white rounded-xl overflow-hidden shadow-lg transform transition-transform hover:-translate-y-2">
@@ -277,7 +308,15 @@ const OrganizationPage: React.FC = () => {
                   </div>
                   <div>
                     <div className="text-sm font-medium text-gray-500 mb-1">Tugas</div>
-                    <p className="text-gray-600">{divisi.description}</p>
+                    {Array.isArray(divisi.description) ? (
+                      <ul className="list-disc list-inside text-gray-600">
+                        {divisi.description.map((item, idx) => (
+                          <li key={idx}>{item}</li>
+                        ))}
+                      </ul>
+                    ) : (
+                      <p className="text-gray-600">{divisi.description}</p>
+                    )}
                   </div>
                 </div>
               </div>

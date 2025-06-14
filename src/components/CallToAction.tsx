@@ -3,7 +3,7 @@ import React from 'react';
 const CallToAction: React.FC = () => {
   const handleWhatsAppClick = () => {
     // Replace with your actual WhatsApp number
-    window.open('https://wa.me/your-number-here', '_blank');
+    window.open('https://wa.me/6282325733370?text=Assalamualaikum,+Halo,+saya+ingin+bergabung+dengan+ROHIS+Kabupaten+Tegal', '_blank');
   };
 
   return (

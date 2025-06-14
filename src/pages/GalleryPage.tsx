@@ -5,14 +5,14 @@ const galleryData = [
   {
     id: 1,
     image: '/contoh-bg.jpg',
-    title: 'Kajian Rutin Mingguan',
+    title: 'Rapat Rutinan',
     category: 'kajian',
     date: '15 Maret 2023'
   },
   {
     id: 2,
     image: '/contoh-bg.jpg',
-    title: 'Perayaan Maulid Nabi',
+    title: 'Titik Kumpul Rohis',
     category: 'perayaan',
     date: '10 Oktober 2023'
   },

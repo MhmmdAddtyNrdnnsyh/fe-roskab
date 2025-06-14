@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 interface NewsArticle {
   id: number;
@@ -13,7 +14,7 @@ interface NewsArticle {
 const latestNews: NewsArticle[] = [
   {
     id: 1,
-    title: "Pelantikan Pengurus ROHIS Kabupaten Tegal Periode 2025-2026",
+    title: "Re-Organisasi Pengurus ROHIS Kabupaten Tegal Periode 2025-2026",
     excerpt: "Bertempat di SMK Negeri 1 Adiwerna, telah dilaksanakan pelantikan pengurus ROHIS Kabupaten Tegal periode 2025-2026 yang dihadiri oleh seluruh anggota dan pembina.",
     date: "13 April 2025",
     image: "/fotbar.jpg",
@@ -22,59 +23,18 @@ const latestNews: NewsArticle[] = [
   },
   {
     id: 2,
-    title: "Kajian Rutin Bersama Ustadz Adi Hidayat",
-    excerpt: "ROHIS Kabupaten Tegal mengadakan kajian rutin dengan tema 'Membangun Generasi Qurani di Era Digital' bersama Ustadz Adi Hidayat, Lc., MA.",
-    date: "20 Maret 2025",
-    image: "/fotbar.jpg",
-    category: "Kajian",
-    author: "Tim Media ROHIS"
-  },
-  {
-    id: 3,
-    title: "Buka Puasa Bersama dan Santunan Anak Yatim",
-    excerpt: "ROHIS Kabupaten Tegal mengadakan acara buka puasa bersama dan santunan anak yatim di Masjid Agung Kabupaten Tegal.",
-    date: "18 Maret 2025",
+    title: "Pelantikan Pengurus ROHIS Kabupaten Tegal Periode 2025-2026",
+    excerpt: "Bertempat di SMK Negeri 1 Adiwerna, telah dilaksanakan pelantikan pengurus ROHIS Kabupaten Tegal periode 2025-2026 yang dihadiri oleh seluruh anggota dan pembina.",
+    date: "13 April 2025",
     image: "/fotbar.jpg",
     category: "Kegiatan",
     author: "Tim Media ROHIS"
   },
-  {
-    id: 4,
-    title: "Workshop Kaligrafi Islam",
-    excerpt: "ROHIS Kabupaten Tegal menyelenggarakan workshop kaligrafi Islam untuk meningkatkan kreativitas dan kecintaan terhadap seni Islam.",
-    date: "15 Maret 2025",
-    image: "/fotbar.jpg",
-    category: "Workshop",
-    author: "Tim Media ROHIS"
-  },
-  {
-    id: 5,
-    title: "Silaturahmi dengan ROHIS Sekabupaten",
-    excerpt: "Acara silaturahmi antar ROHIS se-Kabupaten Tegal untuk mempererat ukhuwah Islamiyah.",
-    date: "10 Maret 2025",
-    image: "/fotbar.jpg",
-    category: "Kegiatan",
-    author: "Tim Media ROHIS"
-  }
 ];
 
 const LatestNews: React.FC = () => {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
-
-  const scroll = (direction: 'left' | 'right') => {
-    if (scrollContainerRef.current) {
-      const scrollAmount = 400; // Adjust this value based on your card width
-      const currentScroll = scrollContainerRef.current.scrollLeft;
-      const newScroll = direction === 'left' 
-        ? currentScroll - scrollAmount 
-        : currentScroll + scrollAmount;
-      
-      scrollContainerRef.current.scrollTo({
-        left: newScroll,
-        behavior: 'smooth'
-      });
-    }
-  };
+  const navigate = useNavigate();
 
   return (
     <section className="py-20 bg-gray-50">
@@ -92,25 +52,6 @@ const LatestNews: React.FC = () => {
         </div>
 
         <div className="relative">
-          {/* Navigation Buttons */}
-          <button 
-            onClick={() => scroll('left')}
-            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-6 z-10 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center text-gray-800 hover:bg-green-500 hover:text-white transition-colors"
-          >
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7" />
-            </svg>
-          </button>
-          
-          <button 
-            onClick={() => scroll('right')}
-            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-6 z-10 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center text-gray-800 hover:bg-green-500 hover:text-white transition-colors"
-          >
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
-            </svg>
-          </button>
-
           {/* Scrollable Container */}
           <div 
             ref={scrollContainerRef}
@@ -159,7 +100,10 @@ const LatestNews: React.FC = () => {
                       <span className="ml-2 text-sm text-gray-600">{article.author}</span>
                     </div>
                     
-                    <button className="text-green-600 hover:text-green-700 font-medium text-sm flex items-center">
+                    <button 
+                      onClick={() => navigate('/event')}
+                      className="text-green-600 hover:text-green-700 font-medium text-sm flex items-center"
+                    >
                       Baca Selengkapnya
                       <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />

@@ -33,13 +33,6 @@ const About: React.FC = () => {
               Kami adalah organisasi anak muda yang aktif dalam kegiatan keagamaan, sosial, dan pengembangan diri.
               Bersama-sama, kami tumbuh dalam iman dan berkontribusi positif untuk lingkungan sekitar.
             </p>
-            
-            <button className="bg-green-500 text-white font-semibold py-3 px-8 rounded-full text-lg hover:bg-green-600 transition-colors shadow-lg inline-flex items-center gap-2">
-              <span>Pelajari Lebih Lanjut</span>
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-              </svg>
-            </button>
           </div>
         </div>
       </div>

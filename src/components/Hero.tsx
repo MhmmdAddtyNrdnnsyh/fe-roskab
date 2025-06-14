@@ -1,8 +1,10 @@
 import React, { useRef, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Hero: React.FC = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [showVideoPopup, setShowVideoPopup] = useState(false);
+  const navigate = useNavigate();
 
   const handlePlayVideo = () => {
     setShowVideoPopup(true);
@@ -40,7 +42,10 @@ const Hero: React.FC = () => {
           Selamat datang di situs web resmi ROHIS SMA/SMK se-Kabupaten Tegal, tempat di mana kita dapat bersama-sama memperdalam iman, dan memperkuat ukhuwah Islamiyah di Kabupaten Tegal.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <button className="bg-white text-green-600 font-semibold py-3 px-8 rounded-full text-lg hover:bg-opacity-90 transition-all transform hover:scale-105 shadow-lg">
+            <button 
+              onClick={() => navigate('/tentang')}
+              className="bg-white text-green-600 font-semibold py-3 px-8 rounded-full text-lg hover:bg-opacity-90 transition-all transform hover:scale-105 shadow-lg"
+            >
               Jelajahi Organisasi Kami
             </button>
             <button 

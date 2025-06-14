@@ -7,6 +7,7 @@ import OrganizationPage from './pages/OrganizationPage';
 import ContactPage from './pages/ContactPage';
 import EventsPage from './pages/EventsPage';
 import EventDetailPage from './pages/EventDetailPage';
+import KegiatanPage from './pages/KegiatanPage';
 import './index.css';
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Route path="/kontak" element={<ContactPage />} />
           <Route path="/event" element={<EventsPage />} />
           <Route path="/event/:id" element={<EventDetailPage />} />
+          <Route path="/kegiatan" element={<KegiatanPage />} />
           {/* Add more routes as needed */}
         </Routes>
       </div>

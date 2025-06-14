@@ -1,24 +1,27 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const galleryItems = [
   {
     id: 1,
-    image: '/fotbar.jpg', // Placeholder image path
-    title: 'Kajian Rutin'
+    image: '/kunjunganRoskab/IMG-20250524-WA0036.jpg', // Placeholder image path
+    title: 'Kunjungan Rohis Kabupaten'
   },
   {
     id: 2,
     image: '/fotbar.jpg', // Placeholder image path
-    title: 'Aksi Sosial'
+    title: 'Rapat Rutinan'
   },
   {
     id: 3,
     image: '/fotbar.jpg', // Placeholder image path
-    title: 'Belajar Al-Quran'
+    title: 'Latihan Gabungan Rohis'
   }
 ];
 
 const Gallery: React.FC = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
@@ -52,21 +55,15 @@ const Gallery: React.FC = () => {
                   {item.title}
                 </h3>
               </div>
-              
-              {/* Overlay icon */}
-              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center text-green-600">
-                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path>
-                  </svg>
-                </div>
-              </div>
             </div>
           ))}
         </div>
         
         <div className="text-center">
-          <button className="bg-green-500 text-white font-semibold py-3 px-8 rounded-full text-lg hover:bg-green-600 transition-colors shadow-lg inline-flex items-center gap-2">
+          <button 
+            onClick={() => navigate('/galeri')}
+            className="bg-green-500 text-white font-semibold py-3 px-8 rounded-full text-lg hover:bg-green-600 transition-colors shadow-lg inline-flex items-center gap-2"
+          >
             <span>Lihat Semua Foto</span>
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
