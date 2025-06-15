@@ -1,7 +1,34 @@
 import React from 'react';
 
 // Dummy organization structure data - replace with actual data later
-const organizationData = {
+interface Person {
+  name: string;
+  position: string;
+  image: string;
+  description: string;
+}
+
+interface Division {
+  name: string;
+  head: string;
+  members: string[];
+  description: string[];
+}
+
+interface OrganizationData {
+  pembina1: Person;
+  pembina2: Person;
+  pembina3: Person;
+  pembina4: Person;
+  pembina5: Person;
+  ketua: Person;
+  wakil: Person;
+  sekretaris: Person[];
+  bendahara: Person[];
+  divisi: Division[];
+}
+
+const organizationData: OrganizationData = {
   pembina1: {
     name: 'Akhmad Khanan,S.Ag, M.Pd.I',
     position: 'Pembina Rohis SMA-SMK Kabupaten Tegal',
