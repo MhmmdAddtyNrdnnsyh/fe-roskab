@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 const galleryItems = [
   {
     id: 1,
-    image: '/kunjunganRoskab/IMG-20250524-WA0036.jpg', // Placeholder image path
+    image: '/kunjunganRoskab/kunrosSMAGAWI.jpg', // Placeholder image path
     title: 'Kunjungan Rohis Kabupaten'
   },
   {
@@ -14,7 +14,7 @@ const galleryItems = [
   },
   {
     id: 3,
-    image: '/fotbar.jpg', // Placeholder image path
+    image: '/kunjunganRoskab/kunrosADB.jpg', // Placeholder image path
     title: 'Latihan Gabungan Rohis'
   }
 ];

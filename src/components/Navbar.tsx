@@ -69,6 +69,14 @@ const Navbar: React.FC = () => {
               Galeri
             </Link>
             <Link 
+              to="/kegiatan" 
+              className={`font-medium transition-colors ${isActive('/kegiatan') 
+                ? (isScrolled ? 'text-green-600' : 'text-white font-semibold') 
+                : (isScrolled ? 'text-gray-700 hover:text-green-600' : 'text-white/80 hover:text-white')}`}
+            >
+              Kegiatan
+            </Link>
+            <Link 
               to="/struktur" 
               className={`font-medium transition-colors ${isActive('/struktur') 
                 ? (isScrolled ? 'text-green-600' : 'text-white font-semibold') 
@@ -141,6 +149,13 @@ const Navbar: React.FC = () => {
                 onClick={() => setIsMenuOpen(false)}
               >
                 Galeri
+              </Link>
+              <Link 
+                to="/kegiatan" 
+                className={`px-4 py-3 font-medium ${isActive('/kegiatan') ? 'text-green-600 bg-green-50' : 'text-gray-700 hover:bg-gray-50'}`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Kegiatan
               </Link>
               <Link 
                 to="/struktur" 

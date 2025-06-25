@@ -62,26 +62,26 @@ const organizationData: OrganizationData = {
   ketua: {
     name: 'Muhammad Haidar Islamy Rasyad',
     position: 'Ketua Umum',
-    image: '/fotbar.jpg',
+    image: '/pp/14.png',
     description: 'Siswa SMK Negeri 1 Adiwerna jurusan Teknik Kendaraan Ringan.'
   },
   wakil: {
     name: 'Halimatun Nisa',
     position: 'Wakil Ketua',
-    image: '/fotbar.jpg',
+    image: '/pp/13.png',
     description: 'Siswa SMK Negeri 1 Dukuhturi jurusan Akuntansi.'
   },
   sekretaris: [
     {
       name: 'Jihan Nabila Suryo',
       position: 'Sekretaris 1',
-      image: '/fotbar.jpg',
+      image: '/pp/15.png',
       description: 'Siswa SMK Negeri 1 Adiwerna jurusan Teknik Komputer dan Jaringan.'
     },
     {
       name: 'Setiawati Sasmita',
       position: 'Sekretaris 2',
-      image: '/fotbar.jpg',
+      image: '/pp/16.png',
       description: 'Siswa SMA Negeri 1 Slawi paket IPA.'
     }
   ],
@@ -89,13 +89,13 @@ const organizationData: OrganizationData = {
     {
       name: 'Kirannia Ayu Zulaika',
       position: 'Bendahara 1',
-      image: '/fotbar.jpg',
+      image: '/pp/17.png',
       description: 'Siswa SMK Negeri 1 Slawi jurusan Akuntansi.'
     },
     {
       name: 'M. Ridho Balya Mahbubi',
       position: 'Bendahara 2',
-      image: '/fotbar.jpg',
+      image: '/pp/18.png',
       description: 'Siswa SMK Negeri 2 Adiwerna jurusan Akuntansi.'
     }
   ],
@@ -179,7 +179,7 @@ const OrganizationPage: React.FC = () => {
         {/* Pembina Section */}
         <div className="max-w-6xl mx-auto mb-24">
           <h2 className="text-2xl font-bold mb-8 text-center font-nunito text-gray-800">Pembina</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 gap-6">
             {Object.entries(organizationData)
               .filter(([key]) => key.startsWith('pembina'))
               .map(([key, person]) => {
@@ -218,57 +218,53 @@ const OrganizationPage: React.FC = () => {
         {/* Main Leaders */}
         <div className="max-w-6xl mx-auto mb-24">
           <h2 className="text-2xl font-bold mb-8 text-center font-nunito text-gray-800">Ketua & Wakil</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {/* Ketua */}
-            <div className="bg-white rounded-xl overflow-hidden shadow-lg transform transition-transform hover:-translate-y-2">
+            <div className="bg-white rounded-xl overflow-hidden shadow-md transform transition-transform hover:-translate-y-1">
               <div className="h-2 bg-green-500"></div>
-              <div className="p-6">
-                <div className="flex flex-col sm:flex-row gap-6 items-center">
-                  <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-white shadow-md">
+              <div className="p-4">
+                <div className="flex flex-col items-center text-center">
+                  <div className="w-24 h-24 rounded-full overflow-hidden border-4 border-white shadow-md mb-4">
                     <img 
                       src={organizationData.ketua.image} 
                       alt={organizationData.ketua.name} 
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <div>
-                    <div className="inline-block px-3 py-1 bg-green-100 text-green-600 rounded-full text-xs font-medium mb-2">
-                      {organizationData.ketua.position}
-                    </div>
-                    <h3 className="text-2xl font-bold text-gray-800 font-nunito">
-                      {organizationData.ketua.name}
-                    </h3>
-                    <p className="text-gray-600 mt-2">
-                      {organizationData.ketua.description}
-                    </p>
+                  <div className="inline-block px-3 py-1 bg-green-100 text-green-600 rounded-full text-xs font-medium mb-2">
+                    {organizationData.ketua.position}
                   </div>
+                  <h3 className="text-lg font-bold text-gray-800 font-nunito">
+                    {organizationData.ketua.name}
+                  </h3>
+                  <p className="text-gray-600 mt-2 text-sm">
+                    {organizationData.ketua.description}
+                  </p>
                 </div>
               </div>
             </div>
 
             {/* Wakil */}
-            <div className="bg-white rounded-xl overflow-hidden shadow-lg transform transition-transform hover:-translate-y-2">
+            <div className="bg-white rounded-xl overflow-hidden shadow-md transform transition-transform hover:-translate-y-1">
               <div className="h-2 bg-green-500"></div>
-              <div className="p-6">
-                <div className="flex flex-col sm:flex-row gap-6 items-center">
-                  <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-white shadow-md">
+              <div className="p-4">
+                <div className="flex flex-col items-center text-center">
+                  <div className="w-24 h-24 rounded-full overflow-hidden border-4 border-white shadow-md mb-4">
                     <img 
                       src={organizationData.wakil.image} 
                       alt={organizationData.wakil.name} 
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <div>
-                    <div className="inline-block px-3 py-1 bg-green-100 text-green-600 rounded-full text-xs font-medium mb-2">
-                      {organizationData.wakil.position}
-                    </div>
-                    <h3 className="text-2xl font-bold text-gray-800 font-nunito">
-                      {organizationData.wakil.name}
-                    </h3>
-                    <p className="text-gray-600 mt-2">
-                      {organizationData.wakil.description}
-                    </p>
+                  <div className="inline-block px-3 py-1 bg-green-100 text-green-600 rounded-full text-xs font-medium mb-2">
+                    {organizationData.wakil.position}
                   </div>
+                  <h3 className="text-lg font-bold text-gray-800 font-nunito">
+                    {organizationData.wakil.name}
+                  </h3>
+                  <p className="text-gray-600 mt-2 text-sm">
+                    {organizationData.wakil.description}
+                  </p>
                 </div>
               </div>
             </div>

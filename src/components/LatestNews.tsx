@@ -26,7 +26,7 @@ const latestNews: NewsArticle[] = [
     title: "Pelantikan Pengurus ROHIS Kabupaten Tegal Periode 2025-2026",
     excerpt: "Bertempat di SMK Negeri 1 Adiwerna, telah dilaksanakan pelantikan pengurus ROHIS Kabupaten Tegal periode 2025-2026 yang dihadiri oleh seluruh anggota dan pembina.",
     date: "13 April 2025",
-    image: "/fotbar.jpg",
+    image: "/pelantikan.jpg",
     category: "Kegiatan",
     author: "Tim Media ROHIS"
   },

@@ -4,66 +4,31 @@ import React, { useState } from 'react';
 const galleryData = [
   {
     id: 1,
-    image: '/contoh-bg.jpg',
-    title: 'Rapat Rutinan',
-    category: 'kajian',
-    date: '15 Maret 2023'
+    image: '/kunjunganRoskab/kunrosADB.jpg',
+    title: 'Kunjungan ke SMKN 1 Adiwerna',
+    category: 'kunjungan',
+    date: '13 April 2025'
   },
   {
     id: 2,
-    image: '/contoh-bg.jpg',
-    title: 'Titik Kumpul Rohis',
-    category: 'perayaan',
+    image: '/kunjunganRoskab/kunPembina.jpg',
+    title: 'Kunjungan ke Pembina',
+    category: 'kunjungan',
     date: '10 Oktober 2023'
   },
   {
     id: 3,
-    image: '/contoh-bg.jpg',
-    title: 'Aksi Sosial Peduli Banjir',
+    image: '/kunjunganRoskab/kunrosSMAGAWI.jpg',
+    title: 'AKunjungan ke SMKN 3 Slawi',
     category: 'sosial',
     date: '5 Januari 2023'
   },
   {
     id: 4,
-    image: '/contoh-bg.jpg',
-    title: 'Buka Puasa Bersama',
-    category: 'ramadhan',
-    date: '3 April 2023'
-  },
-  {
-    id: 5,
-    image: '/contoh-bg.jpg',
-    title: 'Lomba Kaligrafi',
-    category: 'lomba',
-    date: '20 Mei 2023'
-  },
-  {
-    id: 6,
-    image: '/contoh-bg.jpg',
-    title: 'Tahsin Al-Quran',
-    category: 'kajian',
-    date: '12 Februari 2023'
-  },
-  {
-    id: 7,
-    image: '/contoh-bg.jpg',
-    title: 'Bakti Sosial',
+    image: '/fotbar.jpg',
+    title: 'Pelantikan Rohis SMA-SMK se-Kabupaten Tegal',
     category: 'sosial',
-    date: '8 Agustus 2023'
-  },
-  {
-    id: 8,
-    image: '/contoh-bg.jpg',
-    title: 'Pembagian Sembako',
-    category: 'sosial',
-    date: '25 Desember 2023'
-  },
-  {
-    id: 9,
-    image: '/contoh-bg.jpg',
-    title: 'Seminar Keislaman',
-    category: 'kajian',
-    date: '30 September 2023'
+    date: '5 Januari 2023'
   }
 ];
 
@@ -72,8 +37,8 @@ const categories = [
   { id: 'kajian', name: 'Kajian' },
   { id: 'sosial', name: 'Aksi Sosial' },
   { id: 'perayaan', name: 'Perayaan' },
-  { id: 'ramadhan', name: 'Ramadhan' },
-  { id: 'lomba', name: 'Lomba' }
+  { id: 'lomba', name: 'Lomba' },
+  { id: 'kunjungan', name: 'Kunjungan' }
 ];
 
 const GalleryPage: React.FC = () => {
