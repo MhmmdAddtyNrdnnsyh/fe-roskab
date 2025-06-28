@@ -30,6 +30,16 @@ const latestNews: NewsArticle[] = [
     category: "Kegiatan",
     author: "Tim Media ROHIS"
   },
+  {
+    id: 3,
+    title: "Perayaan Hari Besar ISLAM (PHBI)",
+    excerpt: "Bertempat di SMK Negeri 1 Adiwerna, telah dilaksanakan perayaan hari besar islam, dan acara outbond",
+    date: "13 April 2025",
+    image: "/phbi.jpg",
+    category: "Kegiatan",
+    author: "Tim Media ROHIS"
+  },
+  
 ];
 
 const LatestNews: React.FC = () => {

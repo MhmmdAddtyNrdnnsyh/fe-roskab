@@ -29,6 +29,13 @@ const galleryData = [
     title: 'Pelantikan Rohis SMA-SMK se-Kabupaten Tegal',
     category: 'sosial',
     date: '5 Januari 2023'
+  },
+  {
+    id: 5,
+    image: '/phbi.jpg',
+    title: 'Perayaan Hari Besar ISLAM',
+    category: 'perayaan',
+    date: '13 April 2025'
   }
 ];
 

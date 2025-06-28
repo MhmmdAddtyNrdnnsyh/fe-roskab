@@ -9,8 +9,8 @@ const galleryItems = [
   },
   {
     id: 2,
-    image: '/fotbar.jpg', // Placeholder image path
-    title: 'Rapat Rutinan'
+    image: '/phbi.jpg', // Placeholder image path
+    title: 'Perayaan Hari Besar ISLAM'
   },
   {
     id: 3,
